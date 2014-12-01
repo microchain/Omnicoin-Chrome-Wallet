@@ -1,0 +1,59 @@
+<navbar balance="balance"></navbar>
+<menu></menu>
+
+<div id="all-addresses">
+	<br>
+	<div class="row">
+		<div class="h3 text-center">
+			<span class="label label-grey square">
+				<strong>ALL ADDRESSES:</strong>
+			</span>
+		</div>
+	</div>
+	<div class="row" >
+		<div class="col-xs-1">
+			<h6 class="text-center">
+				<small class='extra-small address-muted'>
+					ID
+				</small>
+			</h6>
+		</div>
+		<div class="col-xs-9">
+			<h6 class="text-center">
+				<small class='extra-small address-muted'>
+					PUBLIC KEY
+				</small>
+			</h6>
+		</div>
+		<div class="col-xs-1 bal">
+			<h6 class="text-center">
+				<small class='extra-small address-muted'>
+					BAL
+				</small>
+			</h6>
+		</div>
+	</div>
+	<spinner waiting="waiting" size='medium'></spinner>
+	<div class="row" ng-repeat="addr in addresses">
+		<div class="col-xs-1">
+			<h6>
+				<img ng-src="http://identicoin.herokuapp.com/address/{{addr.address}}" height="15" width="15">
+			</h6>
+		</div>
+		<div class="col-xs-9">
+			<h6>
+				<small class='extra-small address-muted'>
+					<a href="https://blockchain.info/address/{{addr.address}}" target="_blank">{{addr.address}}</a>
+				</small>
+			</h6>
+		</div>
+		<div class="col-xs-1 bal">
+			<h6 class="text-success transaction extra-small">
+				<span class="fa fa-bitcoin"></span>
+				<span>
+					{{addr.final_balance / 100000000}}
+				</span>
+			</h6>
+		</div>
+	</div>
+</div>

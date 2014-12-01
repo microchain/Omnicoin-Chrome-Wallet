@@ -1,0 +1,12 @@
+{
+  "name": "Omnicoin",
+  "description": "Embedded Omnicoin wallet",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "omnicoin-16.png", "128": "omnicoin-128.png" }
+}

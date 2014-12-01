@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "lib/jquery/jquery.min.js", "lib/bitcoinjs-min.js", "lib/chrome_storage.js", "lib/sparecoins.js", "lib/sparecoins_lib.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon19.png",
+      "default_popup": "index.html",
+      "default_title": "Omnicoin Wallet"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Shift+Ctrl+K"
+         }
+      }
+   },
+   "homepage_url": "http://omnicoin.org/",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjn4KVfcweftGhN9gpO9Wv9o5OLPer83HSdKzVuCx9Le7Q9/4+jZCJFeXjGH6zzk1dCGsFYZJ3wgRaW3MmB35I/9j/KvBlyc8n4uShq/iBDMpax4wvKVCoKZgS9aLApacx2CCLYaPd/BbdMMl1zawY/ck0hjPAzOPRh682YOajSSXg+2BW7Q2e8RIenX2s6xb/X2rGa/AQ0jcmTNMvuk0kkbiWxNn6cvtqqrgSkgOzDZr39pJ9nUGmaZAwNFI6pRoT321YLBfFBiyUu1NTVhUqvclnQBJ1xG7B87Se5b5GmS/V7EXjDCdfnssD1tC9Zfu+N88gAizZ0ZxOQUhIz3YWQIDAQAB",
+   "manifest_version": 2,
+   "name": "Omnicoin",
+   "description": "Embedded Omnicoin wallet",
+   "permissions": [ "unlimitedStorage", "storage" ],
+   "update_url": "",
+   "version": "0.1"
+}
